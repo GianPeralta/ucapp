@@ -1,0 +1,11 @@
+{
+    "android": {
+      "release": {
+        "keystore": "ucordilleras.keystore",
+        "storePassword": "gian123",
+        "alias": "ucordilleras",
+        "password": "gian123",
+        "keystoreType": "PKCS12"
+      }
+    }
+  }

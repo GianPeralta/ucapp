@@ -1,0 +1,39 @@
+{
+  "name": "com.example.uc",
+  "displayName": "UCordilleras",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-msal": {
+        "KEY_HASH": "NRXJFCfANSYC2OPcYugnsiDhh40="
+      },
+      "cordova-plugin-fingerprint-aio": {},
+      "cordova-plugin-biometric-auth": {
+        "ANDROIDX_BIOMETRIC_VERSION": "1.2.0-alpha03"
+      }
+    }
+  },
+  "devDependencies": {
+    "cordova-android": "^12.0.1",
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-biometric-auth": "^1.0.1",
+    "cordova-plugin-msal": "^4.0.0"
+  },
+  "dependencies": {
+    "cordova-plugin-fingerprint-aio": "5.0.1"
+  }
+}

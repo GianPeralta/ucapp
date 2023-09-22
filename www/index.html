@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Cordova Card App</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <style>
+      .card-content p{
+        font-size: 3vh;
+      }
+      .card-content h2{
+        font-size: 3vh;
+      }
+      .card-content h3{
+        font-size: 2vh;
+      }
+      .card-content img{
+        height: 6vh;
+        min-height: 6vh;
+        max-height: 6vh;
+      }
+    </style>
+</head>
+<body style="height: 100vh;">
+  <header style="height: 5vh;">
+    <div class="logo">
+        <img src="img/head.png" alt="App Logo">
+    </div>
+    <div class="app-option">
+      <button id="option-button">
+        <img src="img/options.svg" alt="Options" id="gear-icon">
+      </button>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 80%; box-shadow: none; height: 10vh; margin: 0vh;">
+        <div class="card-content">
+          <h2 style="margin-bottom: 0;" id="uc-name"></h2>
+          <h3 style="margin-top: 7px;" id="uc-date"></h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" data-id="Profile" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/user.svg" alt="Receipt Icon">
+          <p>Profile</p>
+        </div>
+      </div>
+      <div class="card" data-id="Accounts" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/receipt-true.svg" alt="Receipt Icon">
+          <p>Accounts</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" data-id="Attendance" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/attendance.svg" alt="Receipt Icon">
+          <p>Attendance</p>
+        </div>
+      </div>
+      <div class="card" data-id="Grades" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/grades.svg" alt="Receipt Icon">
+          <p>Grades</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" data-id="Schedule" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/schedule.svg" alt="Receipt Icon">
+          <p>Schedule</p>
+        </div>
+      </div>
+      <div class="card" data-id="Events" style="width: 38%; height: 20vh;">
+        <div class="card-content">
+          <img src="img/events.svg" alt="Receipt Icon">
+          <p>Events</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="side-panel hidden">
+    <div class="container">
+      <div class="row">
+        <div class="card" style="width: 70%; height: 5vh; padding: 1vh;" id="logout">
+          <div class="card-content" style="flex-direction: row;">
+            <p>Logout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center-panel" id="center-panel">
+    <div class="container">
+
+      <div class="close-button">
+        <img src="img/close.svg" alt="Close Button" id="close-center-panel-button">
+      </div>
+      
+      <div class="row">
+        <p id="panel-text"></p>
+      </div>
+    </div>
+  </div>
+  <script src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
